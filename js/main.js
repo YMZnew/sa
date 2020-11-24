@@ -240,7 +240,7 @@ function takeSnapshot() {
   canvas.height = height;
 
   context = canvas.getContext('2d');
-  context.drawImage(video, 0, 0, width, height);
+ // context.drawImage(video, 0, 0, width, height);
 
   // polyfil if needed https://github.com/blueimp/JavaScript-Canvas-to-Blob
 
