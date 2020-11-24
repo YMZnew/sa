@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
 
           // init the UI and the camera stream
           initCameraUI();
-          initCameraStream();
+//           initCameraStream();
         });
       })
       .catch(function (error) {
@@ -140,7 +140,7 @@ function initCameraUI() {
       if (currentFacingMode === 'environment') currentFacingMode = 'user';
       else currentFacingMode = 'environment';
 
-      initCameraStream();
+     // initCameraStream();
     });
   }
 
