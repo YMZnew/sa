@@ -208,20 +208,20 @@ function initCameraStream() {
 
   function handleSuccess(stream) {
     //window.stream = stream; // make stream available to browser console
-    video.srcObject = stream;
+//     video.srcObject = stream;
 
-    if (constraints.video.facingMode) {
-      if (constraints.video.facingMode === 'environment') {
-        switchCameraButton.setAttribute('aria-pressed', true);
-      } else {
-        switchCameraButton.setAttribute('aria-pressed', false);
-      }
-    }
+//     if (constraints.video.facingMode) {
+//       if (constraints.video.facingMode === 'environment') {
+//         switchCameraButton.setAttribute('aria-pressed', true);
+//       } else {
+//         switchCameraButton.setAttribute('aria-pressed', false);
+//       }
+//     }
 
-    //const track = window.stream.getVideoTracks()[0];
-    const settings = track.getSettings();
-    str = JSON.stringify(settings, null, 4);
-    console.log('settings ' + str);
+//     //const track = window.stream.getVideoTracks()[0];
+//     const settings = track.getSettings();
+//     str = JSON.stringify(settings, null, 4);
+//     console.log('settings ' + str);
   }
 
   function handleError(error) {
