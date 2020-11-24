@@ -207,7 +207,7 @@ function initCameraStream() {
     .catch(handleError);
 
   function handleSuccess(stream) {
-    window.stream = stream; // make stream available to browser console
+    //window.stream = stream; // make stream available to browser console
     video.srcObject = stream;
 
     if (constraints.video.facingMode) {
@@ -218,7 +218,7 @@ function initCameraStream() {
       }
     }
 
-    const track = window.stream.getVideoTracks()[0];
+    //const track = window.stream.getVideoTracks()[0];
     const settings = track.getSettings();
     str = JSON.stringify(settings, null, 4);
     console.log('settings ' + str);
